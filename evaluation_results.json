@@ -1,0 +1,207 @@
+[
+  {
+    "question": "What do students say to do if on-campus housing is full?",
+    "expected": "Look for off-campus housing, ask about emergency housing or temporary placements, and use leftover financial aid or loans for rent if allowed.",
+    "answer": "According to the context provided by sources such as 01_housing_shortage, if on-campus housing is full, students suggest looking for off-campus housing, using leftover financial aid for rent, asking for a landlord letter, and checking for emergency housing or commuter alternatives. Additionally, some students mention that schools may offer temporary spaces or waitlists (01_housing_shortage).\n\nSources: 01_housing_shortage, 09_off_campus_as_freshman, 10_bad_idea_off_campus_freshman, 03_college_student_apartments",
+    "sources": [
+      "01_housing_shortage (C:\\Users\\johns\\OneDrive\\Documents\\A210\\ai201-project1-unofficial-guide-starter\\documents\\01_housing_shortage.md)",
+      "09_off_campus_as_freshman (C:\\Users\\johns\\OneDrive\\Documents\\A210\\ai201-project1-unofficial-guide-starter\\documents\\09_off_campus_as_freshman.md)",
+      "10_bad_idea_off_campus_freshman (C:\\Users\\johns\\OneDrive\\Documents\\A210\\ai201-project1-unofficial-guide-starter\\documents\\10_bad_idea_off_campus_freshman.md)",
+      "03_college_student_apartments (C:\\Users\\johns\\OneDrive\\Documents\\A210\\ai201-project1-unofficial-guide-starter\\documents\\03_college_student_apartments.md)"
+    ],
+    "retrieved_chunks": [
+      {
+        "distance": 0.23869860172271729,
+        "source_path": "C:\\Users\\johns\\OneDrive\\Documents\\A210\\ai201-project1-unofficial-guide-starter\\documents\\01_housing_shortage.md",
+        "document_title": "01_housing_shortage",
+        "chunk_index": 0,
+        "text": "# My school has no where for me to live on campus\nSource: https://www.reddit.com/r/college/comments/wlbqbk/my_school_has_no_where_for_me_to_live_on_campus/\nThe poster says the school ran out of on-campus housing and asks what students do when they cannot afford off-campus housing or commute.\nCommon advice in the thread says to look for off-campus housing, use leftover financial aid for rent, ask for a landlord letter, and check for emergency housing or commuter alternatives.\nSeveral comments also mention that schools sometimes over-admit students, put people on waitlists, or move students into temporary spaces like lounges, hotel rooms, or triple/quad occupancy rooms."
+      },
+      {
+        "distance": 0.3758866786956787,
+        "source_path": "C:\\Users\\johns\\OneDrive\\Documents\\A210\\ai201-project1-unofficial-guide-starter\\documents\\09_off_campus_as_freshman.md",
+        "document_title": "09_off_campus_as_freshman",
+        "chunk_index": 0,
+        "text": "# Should I stay off campus as a freshman?\nSource: https://www.reddit.com/r/college/comments/14l0ebv/should_i_stay_off_campus_as_a_freshman_hear_me_out/\nThe discussion suggests off-campus living can be a good option if it is cheaper and more physically comfortable.\nOne useful detail is that some apartment complexes offer roommate matching, which can help freshmen find people with similar lifestyles or preferences."
+      },
+      {
+        "distance": 0.39460599422454834,
+        "source_path": "C:\\Users\\johns\\OneDrive\\Documents\\A210\\ai201-project1-unofficial-guide-starter\\documents\\10_bad_idea_off_campus_freshman.md",
+        "document_title": "10_bad_idea_off_campus_freshman",
+        "chunk_index": 0,
+        "text": "# Is it a bad idea to live off campus in an apartment as a freshman?\nSource: https://www.reddit.com/r/college/comments/1bqft01/is_it_a_bad_idea_to_live_off_campus_in_an_apartment_as_a_freshman/\nThe poster says they want to save money by avoiding dorms and on-campus apartments.\nThe thread frames the decision around rent, distance from campus, and the need to find roommates who can split costs, which makes it useful for questions about freshman off-campus housing tradeoffs."
+      },
+      {
+        "distance": 0.40634119510650635,
+        "source_path": "C:\\Users\\johns\\OneDrive\\Documents\\A210\\ai201-project1-unofficial-guide-starter\\documents\\03_college_student_apartments.md",
+        "document_title": "03_college_student_apartments",
+        "chunk_index": 0,
+        "text": "# College student apartments\nSource: https://www.reddit.com/r/college/comments/13vi9xb/college_student_apartments/\nA student explains they want to move out of on-campus housing but have no credit score and do not meet the typical income requirements for apartments.\nThe thread focuses on the practical barrier of getting approved as a student renter, especially when landlords expect rental history, income, or a credit check."
+      }
+    ]
+  },
+  {
+    "question": "Is dorm life always cheaper than living off campus?",
+    "expected": "No. Students say it depends on the school; off-campus can be cheaper, but utilities, transportation, and furnishings can change the total cost.",
+    "answer": "No, dorm life is not always cheaper than living off campus. According to sources such as 02_dorm_life_worth_it and 05_living_in_dorm, off-campus housing can be cheaper, even after accounting for meals. However, the cost comparison depends on various factors, including meal costs, commute time, and personal preferences (02_dorm_life_worth_it, 05_living_in_dorm, 08_dorm_vs_apartment).\n\nSources: 02_dorm_life_worth_it, 05_living_in_dorm, 09_off_campus_as_freshman, 08_dorm_vs_apartment",
+    "sources": [
+      "02_dorm_life_worth_it (C:\\Users\\johns\\OneDrive\\Documents\\A210\\ai201-project1-unofficial-guide-starter\\documents\\02_dorm_life_worth_it.md)",
+      "05_living_in_dorm (C:\\Users\\johns\\OneDrive\\Documents\\A210\\ai201-project1-unofficial-guide-starter\\documents\\05_living_in_dorm.md)",
+      "09_off_campus_as_freshman (C:\\Users\\johns\\OneDrive\\Documents\\A210\\ai201-project1-unofficial-guide-starter\\documents\\09_off_campus_as_freshman.md)",
+      "08_dorm_vs_apartment (C:\\Users\\johns\\OneDrive\\Documents\\A210\\ai201-project1-unofficial-guide-starter\\documents\\08_dorm_vs_apartment.md)"
+    ],
+    "retrieved_chunks": [
+      {
+        "distance": 0.16808265447616577,
+        "source_path": "C:\\Users\\johns\\OneDrive\\Documents\\A210\\ai201-project1-unofficial-guide-starter\\documents\\02_dorm_life_worth_it.md",
+        "document_title": "02_dorm_life_worth_it",
+        "chunk_index": 0,
+        "text": "# Is dorm life worth it?\nSource: https://www.reddit.com/r/college/comments/sx5l1a/is_dorm_life_worth_it/\nStudents compare the cost of on-campus housing with off-campus options and note that dorms can be expensive, especially when the school requires first-year students to live on campus.\nThe discussion suggests dorm life may still be worth it for convenience, but some commenters say off-campus housing can be cheaper even after accounting for meals and the value of the dorm experience depends on the school and the student's situation."
+      },
+      {
+        "distance": 0.2067825198173523,
+        "source_path": "C:\\Users\\johns\\OneDrive\\Documents\\A210\\ai201-project1-unofficial-guide-starter\\documents\\05_living_in_dorm.md",
+        "document_title": "05_living_in_dorm",
+        "chunk_index": 0,
+        "text": "# What is it Like Living in a College Dorm?\nSource: https://www.reddit.com/r/college/comments/qamuez/what_is_it_like_living_in_a_college_dorm/\nThe thread discusses the dorm experience as a tradeoff between convenience and cost. Some students say first-year dorm requirements and scholarship rules can make on-campus living feel mandatory.\nOther comments note that off-campus apartments can be cheaper and give more freedom, but the final choice often depends on meal costs, commute time, and whether a student wants more independence."
+      },
+      {
+        "distance": 0.29079848527908325,
+        "source_path": "C:\\Users\\johns\\OneDrive\\Documents\\A210\\ai201-project1-unofficial-guide-starter\\documents\\09_off_campus_as_freshman.md",
+        "document_title": "09_off_campus_as_freshman",
+        "chunk_index": 0,
+        "text": "# Should I stay off campus as a freshman?\nSource: https://www.reddit.com/r/college/comments/14l0ebv/should_i_stay_off_campus_as_a_freshman_hear_me_out/\nThe discussion suggests off-campus living can be a good option if it is cheaper and more physically comfortable.\nOne useful detail is that some apartment complexes offer roommate matching, which can help freshmen find people with similar lifestyles or preferences."
+      },
+      {
+        "distance": 0.3257397413253784,
+        "source_path": "C:\\Users\\johns\\OneDrive\\Documents\\A210\\ai201-project1-unofficial-guide-starter\\documents\\08_dorm_vs_apartment.md",
+        "document_title": "08_dorm_vs_apartment",
+        "chunk_index": 0,
+        "text": "# Dorm vs apartment\nSource: https://www.reddit.com/r/college/comments/tq0u2n/dorm_vs_apartment/\nA transfer student asks whether they should live in a dorm or a one-bedroom apartment near campus.\nComments weigh cost, social life, and convenience, with the overall theme that apartments can make sense if money and independence matter more than dorm life."
+      }
+    ]
+  },
+  {
+    "question": "What problems do students run into when trying to rent an apartment off campus?",
+    "expected": "Lack of credit history, rental history, and income can make approval difficult.",
+    "answer": "Students trying to rent an apartment off campus may run into problems such as finding roommates to split costs (10_bad_idea_off_campus_freshman), affording off-campus housing (01_housing_shortage), and meeting income or credit score requirements for apartment approval (03_college_student_apartments). These sources suggest that students may face challenges in securing off-campus housing due to financial constraints and lack of rental history or credit score.\n\nSources: 10_bad_idea_off_campus_freshman, 01_housing_shortage, 03_college_student_apartments, 05_living_in_dorm",
+    "sources": [
+      "10_bad_idea_off_campus_freshman (C:\\Users\\johns\\OneDrive\\Documents\\A210\\ai201-project1-unofficial-guide-starter\\documents\\10_bad_idea_off_campus_freshman.md)",
+      "01_housing_shortage (C:\\Users\\johns\\OneDrive\\Documents\\A210\\ai201-project1-unofficial-guide-starter\\documents\\01_housing_shortage.md)",
+      "03_college_student_apartments (C:\\Users\\johns\\OneDrive\\Documents\\A210\\ai201-project1-unofficial-guide-starter\\documents\\03_college_student_apartments.md)",
+      "05_living_in_dorm (C:\\Users\\johns\\OneDrive\\Documents\\A210\\ai201-project1-unofficial-guide-starter\\documents\\05_living_in_dorm.md)"
+    ],
+    "retrieved_chunks": [
+      {
+        "distance": 0.2883731722831726,
+        "source_path": "C:\\Users\\johns\\OneDrive\\Documents\\A210\\ai201-project1-unofficial-guide-starter\\documents\\10_bad_idea_off_campus_freshman.md",
+        "document_title": "10_bad_idea_off_campus_freshman",
+        "chunk_index": 0,
+        "text": "# Is it a bad idea to live off campus in an apartment as a freshman?\nSource: https://www.reddit.com/r/college/comments/1bqft01/is_it_a_bad_idea_to_live_off_campus_in_an_apartment_as_a_freshman/\nThe poster says they want to save money by avoiding dorms and on-campus apartments.\nThe thread frames the decision around rent, distance from campus, and the need to find roommates who can split costs, which makes it useful for questions about freshman off-campus housing tradeoffs."
+      },
+      {
+        "distance": 0.29196709394454956,
+        "source_path": "C:\\Users\\johns\\OneDrive\\Documents\\A210\\ai201-project1-unofficial-guide-starter\\documents\\01_housing_shortage.md",
+        "document_title": "01_housing_shortage",
+        "chunk_index": 0,
+        "text": "# My school has no where for me to live on campus\nSource: https://www.reddit.com/r/college/comments/wlbqbk/my_school_has_no_where_for_me_to_live_on_campus/\nThe poster says the school ran out of on-campus housing and asks what students do when they cannot afford off-campus housing or commute.\nCommon advice in the thread says to look for off-campus housing, use leftover financial aid for rent, ask for a landlord letter, and check for emergency housing or commuter alternatives.\nSeveral comments also mention that schools sometimes over-admit students, put people on waitlists, or move students into temporary spaces like lounges, hotel rooms, or triple/quad occupancy rooms."
+      },
+      {
+        "distance": 0.2986973524093628,
+        "source_path": "C:\\Users\\johns\\OneDrive\\Documents\\A210\\ai201-project1-unofficial-guide-starter\\documents\\03_college_student_apartments.md",
+        "document_title": "03_college_student_apartments",
+        "chunk_index": 0,
+        "text": "# College student apartments\nSource: https://www.reddit.com/r/college/comments/13vi9xb/college_student_apartments/\nA student explains they want to move out of on-campus housing but have no credit score and do not meet the typical income requirements for apartments.\nThe thread focuses on the practical barrier of getting approved as a student renter, especially when landlords expect rental history, income, or a credit check."
+      },
+      {
+        "distance": 0.39438486099243164,
+        "source_path": "C:\\Users\\johns\\OneDrive\\Documents\\A210\\ai201-project1-unofficial-guide-starter\\documents\\05_living_in_dorm.md",
+        "document_title": "05_living_in_dorm",
+        "chunk_index": 0,
+        "text": "# What is it Like Living in a College Dorm?\nSource: https://www.reddit.com/r/college/comments/qamuez/what_is_it_like_living_in_a_college_dorm/\nThe thread discusses the dorm experience as a tradeoff between convenience and cost. Some students say first-year dorm requirements and scholarship rules can make on-campus living feel mandatory.\nOther comments note that off-campus apartments can be cheaper and give more freedom, but the final choice often depends on meal costs, commute time, and whether a student wants more independence."
+      }
+    ]
+  },
+  {
+    "question": "What makes freshmen consider living off campus anyway?",
+    "expected": "Lower cost, more comfort, roommate matching, and the ability to choose a better housing setup.",
+    "answer": "According to the provided context, freshmen consider living off campus due to several factors. As mentioned in 09_off_campus_as_freshman and 05_living_in_dorm, off-campus living can be cheaper and offer more physical comfort. Additionally, some apartment complexes provide roommate matching services, which can help freshmen find compatible roommates. The decision to live off campus also depends on factors such as meal costs, commute time, and the desire for independence (05_living_in_dorm). Furthermore, some students may choose to live off campus to save money by avoiding dorms and on-campus apartments (10_bad_idea_off_campus_freshman). In some cases, a lack of available on-campus housing may also lead students to consider off-campus options (01_housing_shortage).\n\nSources: 09_off_campus_as_freshman, 05_living_in_dorm, 10_bad_idea_off_campus_freshman, 01_housing_shortage",
+    "sources": [
+      "09_off_campus_as_freshman (C:\\Users\\johns\\OneDrive\\Documents\\A210\\ai201-project1-unofficial-guide-starter\\documents\\09_off_campus_as_freshman.md)",
+      "05_living_in_dorm (C:\\Users\\johns\\OneDrive\\Documents\\A210\\ai201-project1-unofficial-guide-starter\\documents\\05_living_in_dorm.md)",
+      "10_bad_idea_off_campus_freshman (C:\\Users\\johns\\OneDrive\\Documents\\A210\\ai201-project1-unofficial-guide-starter\\documents\\10_bad_idea_off_campus_freshman.md)",
+      "01_housing_shortage (C:\\Users\\johns\\OneDrive\\Documents\\A210\\ai201-project1-unofficial-guide-starter\\documents\\01_housing_shortage.md)"
+    ],
+    "retrieved_chunks": [
+      {
+        "distance": 0.19327014684677124,
+        "source_path": "C:\\Users\\johns\\OneDrive\\Documents\\A210\\ai201-project1-unofficial-guide-starter\\documents\\09_off_campus_as_freshman.md",
+        "document_title": "09_off_campus_as_freshman",
+        "chunk_index": 0,
+        "text": "# Should I stay off campus as a freshman?\nSource: https://www.reddit.com/r/college/comments/14l0ebv/should_i_stay_off_campus_as_a_freshman_hear_me_out/\nThe discussion suggests off-campus living can be a good option if it is cheaper and more physically comfortable.\nOne useful detail is that some apartment complexes offer roommate matching, which can help freshmen find people with similar lifestyles or preferences."
+      },
+      {
+        "distance": 0.26858729124069214,
+        "source_path": "C:\\Users\\johns\\OneDrive\\Documents\\A210\\ai201-project1-unofficial-guide-starter\\documents\\05_living_in_dorm.md",
+        "document_title": "05_living_in_dorm",
+        "chunk_index": 0,
+        "text": "# What is it Like Living in a College Dorm?\nSource: https://www.reddit.com/r/college/comments/qamuez/what_is_it_like_living_in_a_college_dorm/\nThe thread discusses the dorm experience as a tradeoff between convenience and cost. Some students say first-year dorm requirements and scholarship rules can make on-campus living feel mandatory.\nOther comments note that off-campus apartments can be cheaper and give more freedom, but the final choice often depends on meal costs, commute time, and whether a student wants more independence."
+      },
+      {
+        "distance": 0.3212946057319641,
+        "source_path": "C:\\Users\\johns\\OneDrive\\Documents\\A210\\ai201-project1-unofficial-guide-starter\\documents\\10_bad_idea_off_campus_freshman.md",
+        "document_title": "10_bad_idea_off_campus_freshman",
+        "chunk_index": 0,
+        "text": "# Is it a bad idea to live off campus in an apartment as a freshman?\nSource: https://www.reddit.com/r/college/comments/1bqft01/is_it_a_bad_idea_to_live_off_campus_in_an_apartment_as_a_freshman/\nThe poster says they want to save money by avoiding dorms and on-campus apartments.\nThe thread frames the decision around rent, distance from campus, and the need to find roommates who can split costs, which makes it useful for questions about freshman off-campus housing tradeoffs."
+      },
+      {
+        "distance": 0.33821260929107666,
+        "source_path": "C:\\Users\\johns\\OneDrive\\Documents\\A210\\ai201-project1-unofficial-guide-starter\\documents\\01_housing_shortage.md",
+        "document_title": "01_housing_shortage",
+        "chunk_index": 0,
+        "text": "# My school has no where for me to live on campus\nSource: https://www.reddit.com/r/college/comments/wlbqbk/my_school_has_no_where_for_me_to_live_on_campus/\nThe poster says the school ran out of on-campus housing and asks what students do when they cannot afford off-campus housing or commute.\nCommon advice in the thread says to look for off-campus housing, use leftover financial aid for rent, ask for a landlord letter, and check for emergency housing or commuter alternatives.\nSeveral comments also mention that schools sometimes over-admit students, put people on waitlists, or move students into temporary spaces like lounges, hotel rooms, or triple/quad occupancy rooms."
+      }
+    ]
+  },
+  {
+    "question": "What advice do students give about choosing a dorm room or floor?",
+    "expected": "Pick based on noise, privacy, and convenience rather than assuming there is one universally best floor.",
+    "answer": "Students advise considering factors such as privacy, noise, and convenience when choosing a dorm room or floor (06_floor_choice_dorm). They also weigh the tradeoffs between convenience and cost, as well as the benefits of independence and social life (05_living_in_dorm, 08_dorm_vs_apartment). Additionally, students recommend setting boundaries and communicating early when sharing a dorm room to make the experience more manageable (07_sharing_a_dorm_questions).\n\nSources: 06_floor_choice_dorm, 05_living_in_dorm, 08_dorm_vs_apartment, 07_sharing_a_dorm_questions",
+    "sources": [
+      "06_floor_choice_dorm (C:\\Users\\johns\\OneDrive\\Documents\\A210\\ai201-project1-unofficial-guide-starter\\documents\\06_floor_choice_dorm.md)",
+      "05_living_in_dorm (C:\\Users\\johns\\OneDrive\\Documents\\A210\\ai201-project1-unofficial-guide-starter\\documents\\05_living_in_dorm.md)",
+      "08_dorm_vs_apartment (C:\\Users\\johns\\OneDrive\\Documents\\A210\\ai201-project1-unofficial-guide-starter\\documents\\08_dorm_vs_apartment.md)",
+      "07_sharing_a_dorm_questions (C:\\Users\\johns\\OneDrive\\Documents\\A210\\ai201-project1-unofficial-guide-starter\\documents\\07_sharing_a_dorm_questions.md)"
+    ],
+    "retrieved_chunks": [
+      {
+        "distance": 0.29855382442474365,
+        "source_path": "C:\\Users\\johns\\OneDrive\\Documents\\A210\\ai201-project1-unofficial-guide-starter\\documents\\06_floor_choice_dorm.md",
+        "document_title": "06_floor_choice_dorm",
+        "chunk_index": 0,
+        "text": "# Best and worst floor to live on in a dorm\nSource: https://www.reddit.com/r/college/comments/11v4fqi/in_your_opinion_what_is_the_best_and_worst_floor/\nStudents compare different dorm floors and talk about privacy, noise, and convenience.\nThe question is not about one factual answer; it surfaces practical advice about choosing a floor based on how much foot traffic, noise, and stair use a student is willing to handle."
+      },
+      {
+        "distance": 0.3830282688140869,
+        "source_path": "C:\\Users\\johns\\OneDrive\\Documents\\A210\\ai201-project1-unofficial-guide-starter\\documents\\05_living_in_dorm.md",
+        "document_title": "05_living_in_dorm",
+        "chunk_index": 0,
+        "text": "# What is it Like Living in a College Dorm?\nSource: https://www.reddit.com/r/college/comments/qamuez/what_is_it_like_living_in_a_college_dorm/\nThe thread discusses the dorm experience as a tradeoff between convenience and cost. Some students say first-year dorm requirements and scholarship rules can make on-campus living feel mandatory.\nOther comments note that off-campus apartments can be cheaper and give more freedom, but the final choice often depends on meal costs, commute time, and whether a student wants more independence."
+      },
+      {
+        "distance": 0.38927847146987915,
+        "source_path": "C:\\Users\\johns\\OneDrive\\Documents\\A210\\ai201-project1-unofficial-guide-starter\\documents\\08_dorm_vs_apartment.md",
+        "document_title": "08_dorm_vs_apartment",
+        "chunk_index": 0,
+        "text": "# Dorm vs apartment\nSource: https://www.reddit.com/r/college/comments/tq0u2n/dorm_vs_apartment/\nA transfer student asks whether they should live in a dorm or a one-bedroom apartment near campus.\nComments weigh cost, social life, and convenience, with the overall theme that apartments can make sense if money and independence matter more than dorm life."
+      },
+      {
+        "distance": 0.3927575349807739,
+        "source_path": "C:\\Users\\johns\\OneDrive\\Documents\\A210\\ai201-project1-unofficial-guide-starter\\documents\\07_sharing_a_dorm_questions.md",
+        "document_title": "07_sharing_a_dorm_questions",
+        "chunk_index": 0,
+        "text": "# Sharing a dorm: I'm nervous and have some questions\nSource: https://www.reddit.com/r/college/comments/14hz54g/sharing_a_dorm_im_nervous_and_have_some_questions/\nThe poster asks about awkward roommate situations, what to bring, and what it is like sharing a small space with someone you do not know.\nReplies focus on practical dorm life advice: set boundaries, communicate early, and expect that room-sharing can be uncomfortable but manageable if students prepare for it."
+      }
+    ]
+  }
+]

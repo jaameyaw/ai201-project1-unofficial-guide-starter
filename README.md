@@ -9,31 +9,26 @@
 
 ## Domain
 
-<!-- What topic or category of knowledge does your system cover?
-     Why is this knowledge valuable, and why is it hard to find through official channels?
-     Example: "Student reviews of CS professors at [university] — useful because official
-     course descriptions don't reflect teaching style, exam difficulty, or workload." -->
+This system answers questions about off-campus housing and dorm-life advice from student discussions, especially Reddit threads in r/college. That knowledge is useful because official housing pages explain policies, prices, and eligibility, but they do not capture the practical student perspective on waitlists, roommate matching, rental approval barriers, or whether dorm life is actually worth the cost.
 
 ---
 
 ## Document Sources
 
-<!-- List every source you collected documents from.
-     Be specific: include URLs, subreddit names, forum thread titles, or file names.
-     Aim for variety — sources that together cover different subtopics or perspectives. -->
+The corpus uses 10 local markdown files derived from r/college threads:
 
 | # | Source | Type | URL or file path |
 |---|--------|------|-----------------|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
-| 4 | | | |
-| 5 | | | |
-| 6 | | | |
-| 7 | | | |
-| 8 | | | |
-| 9 | | | |
-| 10 | | | |
+| 1 | My school has no where for me to live on campus | Reddit thread | documents/01_housing_shortage.md |
+| 2 | Is dorm life worth it? | Reddit thread | documents/02_dorm_life_worth_it.md |
+| 3 | College student apartments | Reddit thread | documents/03_college_student_apartments.md |
+| 4 | Is student housing a scam? | Reddit thread | documents/04_student_housing_scam.md |
+| 5 | What is it Like Living in a College Dorm? | Reddit thread | documents/05_living_in_dorm.md |
+| 6 | Best and worst floor to live on in a dorm | Reddit thread | documents/06_floor_choice_dorm.md |
+| 7 | Sharing a dorm: I'm nervous and have some questions | Reddit thread | documents/07_sharing_a_dorm_questions.md |
+| 8 | Dorm vs apartment | Reddit thread | documents/08_dorm_vs_apartment.md |
+| 9 | Should I stay off campus as a freshman? | Reddit thread | documents/09_off_campus_as_freshman.md |
+| 10 | Is it a bad idea to live off campus in an apartment as a freshman? | Reddit thread | documents/10_bad_idea_off_campus_freshman.md |
 
 ---
 
@@ -46,13 +41,15 @@
      - Any preprocessing you did before chunking (e.g., stripping HTML, removing headers)
      - What your final chunk count was across all documents -->
 
-**Chunk size:**
+**Chunk size:** 1000 characters
 
-**Overlap:**
+**Overlap:** 150 characters
 
-**Why these choices fit your documents:**
+**Why these choices fit your documents:** The documents are short, opinion-heavy Reddit summaries. A 1000-character chunk keeps each anecdote or advice point intact while still leaving enough room for surrounding context. The 150-character overlap reduces the chance that a useful recommendation gets cut off at a boundary.
 
-**Final chunk count:**
+**Preprocessing:** Local markdown files are loaded from `documents/` and cleaned to remove HTML noise, excess whitespace, and blank-line clutter before chunking.
+
+**Final chunk count:** 10 chunks across 10 documents
 
 ---
 
@@ -64,9 +61,9 @@
      Consider: context length limits, multilingual support, accuracy on domain-specific text,
      latency, and local vs. API-hosted. -->
 
-**Model used:**
+**Model used:** all-MiniLM-L6-v2 via sentence-transformers
 
-**Production tradeoff reflection:**
+**Production tradeoff reflection:** If cost were not a constraint, I would compare larger embedding models with better semantic nuance and longer context handling against the local MiniLM baseline. For this corpus, the main goal is matching student phrasing to the right anecdote, so I would trade some latency and model size for stronger retrieval on housing-specific language, roommate terms, and credit or income barriers. I would also consider multilingual support if the corpus were expanded beyond English.
 
 ---
 
@@ -79,9 +76,9 @@
      Do not just say "I told it to use the documents" — show the actual instruction or explain
      the mechanism. -->
 
-**System prompt grounding instruction:**
+**System prompt grounding instruction:** The model is told: "You are answering questions about student-generated knowledge using only the provided context. Do not use outside knowledge. If the context does not contain enough information, say so explicitly. Keep the answer concise and cite the most relevant source names in the response."
 
-**How source attribution is surfaced in the response:**
+**How source attribution is surfaced in the response:** The retrieved chunks are formatted with source title, file path, distance, and text before being sent to Groq. The final answer appends a `Sources:` line listing the distinct source names that were retrieved for that question.
 
 ---
 
@@ -93,11 +90,11 @@
 
 | # | Question | Expected answer | System response (summarized) | Retrieval quality | Response accuracy |
 |---|----------|-----------------|------------------------------|-------------------|-------------------|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
+| 1 | What do students say to do if on-campus housing is full? | Look for off-campus housing, ask about emergency housing or temporary placements, and use leftover financial aid or loans for rent if allowed. | Suggested off-campus housing, leftover financial aid for rent, asking for a landlord letter, and checking for emergency housing or temporary placements. | Relevant | Accurate |
+| 2 | Is dorm life always cheaper than living off campus? | No. Students say it depends on the school; off-campus can be cheaper, but utilities, transportation, and furnishings can change the total cost. | Said dorm life is not always cheaper and explained that off-campus housing can be cheaper depending on meals, commute time, and the school. | Relevant | Accurate |
+| 3 | What problems do students run into when trying to rent an apartment off campus? | Lack of credit history, rental history, and income can make approval difficult. | Mentioned roommate splitting costs, affordability, and credit or income requirements for approval. | Partially relevant | Partially accurate |
+| 4 | What makes freshmen consider living off campus anyway? | Lower cost, more comfort, roommate matching, and the ability to choose a better housing setup. | Explained that freshmen consider off-campus living for lower cost, more comfort, roommate matching, and independence. | Relevant | Accurate |
+| 5 | What advice do students give about choosing a dorm room or floor? | Pick based on noise, privacy, and convenience rather than assuming there is one universally best floor. | Recommended choosing based on privacy, noise, convenience, and roommate boundaries. | Relevant | Accurate |
 
 **Retrieval quality:** Relevant / Partially relevant / Off-target  
 **Response accuracy:** Accurate / Partially accurate / Inaccurate
@@ -117,13 +114,13 @@
      "The embedding model treated the professor's nickname as out-of-vocabulary and returned
      results from an unrelated review" is an explanation. -->
 
-**Question that failed:**
+**Question that failed:** What problems do students run into when trying to rent an apartment off campus?
 
-**What the system returned:**
+**What the system returned:** The answer mixed the expected credit-history and income barriers with roommate-splitting and general affordability advice.
 
-**Root cause (tied to a specific pipeline stage):**
+**Root cause (tied to a specific pipeline stage):** Retrieval pulled a few nearby off-campus tradeoff chunks because they were semantically close to the question, so the generator blended related but less specific advice instead of staying tightly focused on apartment approval barriers.
 
-**What you would change to fix it:**
+**What you would change to fix it:** Add a reranker or a more targeted document set for approval-specific questions, and consider a tighter retrieval filter so that credit and income barrier chunks outrank general housing-cost chunks.
 
 ---
 
@@ -132,9 +129,9 @@
 <!-- Reflect on how planning.md shaped your implementation.
      Answer both questions with at least 2–3 sentences each. -->
 
-**One way the spec helped you during implementation:**
+**One way the spec helped you during implementation:** The planning document kept the pipeline disciplined: it fixed the domain, chunk size, overlap, retrieval top-k, and evaluation questions before implementation started. That made it easier to validate the system against specific, testable housing questions instead of drifting into a generic chatbot.
 
-**One way your implementation diverged from the spec, and why:**
+**One way your implementation diverged from the spec, and why:** I used local markdown summaries derived from the Reddit threads instead of scraping live thread content at runtime. That made the project reproducible, kept the corpus self-contained, and avoided depending on fragile network or HTML parsing during evaluation.
 
 ---
 
@@ -151,12 +148,12 @@
 
 **Instance 1**
 
-- *What I gave the AI:*
-- *What it produced:*
-- *What I changed or overrode:*
+- *What I gave the AI:* The Domain, Chunking Strategy, and Retrieval Approach sections from planning.md plus the assignment requirements.
+- *What it produced:* A modular RAG pipeline layout with document ingestion, chunking, embedding, ChromaDB persistence, retrieval, and grounded generation.
+- *What I changed or overrode:* I tuned the implementation to use 1000-character chunks, 150-character overlap, and a local all-MiniLM-L6-v2 embedding model to match the short Reddit-style corpus.
 
 **Instance 2**
 
-- *What I gave the AI:*
-- *What it produced:*
-- *What I changed or overrode:*
+- *What I gave the AI:* The five evaluation questions from planning.md and the desired reporting format for the README.
+- *What it produced:* An evaluation harness that ran the five questions through the pipeline and collected answers, sources, and retrieved chunks.
+- *What I changed or overrode:* I added a JSON output file for traceability, then used the real run results to populate the evaluation table and failure analysis instead of writing a generic summary.

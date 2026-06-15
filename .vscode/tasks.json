@@ -1,0 +1,26 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run evaluation",
+			"type": "shell",
+			"command": "& \".\\.venv\\Scripts\\python.exe\"",
+			"args": [
+				"run_evaluation.py"
+			],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "test"
+		},
+		{
+			"label": "run-evaluation",
+			"type": "shell",
+			"command": "\".\\.venv\\Scripts\\python.exe\"",
+			"args": [
+				"run_evaluation.py"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		}
+	]
+}
